@@ -1,0 +1,14 @@
+{
+  "name": "TMSM201Server v0.0.1",
+  "pack": "Minecraft",
+  "packId": 0,
+  "version": "1.20.1",
+  "isPatchedForLog4Shell": true,
+  "javaVersion": {
+    "component": "java-runtime-gamma",
+    "majorVersion": 17
+  },
+  "isDev": false,
+  "mods": [],
+  "ignoredUpdates": []
+}
