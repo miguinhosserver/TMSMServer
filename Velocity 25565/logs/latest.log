@@ -1,0 +1,115 @@
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Booting up Velocity 3.2.0-SNAPSHOT (git-8dcc7ee3-b294)...
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading localizations...
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Connections will use NIO channels, Java compression, Java ciphers
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loading plugins...
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.plugin.VelocityPluginManager]: Loaded plugin ambassador 1.4.3-beta by adde0109
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.VelocityServer]: Loaded 1 plugins
+[22:25:15] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The server channel initializer has been replaced by org.adde0109.ambassador.Ambassador.inject(Ambassador.java:130)
+[22:25:15] [Velocity Async Event Executor - #0/WARN] [com.velocitypowered.proxy.network.ConnectionManager]: The backend channel initializer has been replaced by org.adde0109.ambassador.Ambassador.inject(Ambassador.java:133)
+[22:25:15] [Netty NIO Boss #0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Listening on /[0:0:0:0:0:0:0:0]:25565
+[22:25:15] [main/INFO] [com.velocitypowered.proxy.Velocity]: Done (1,6s)!
+[22:26:44] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:52812) has connected
+[22:26:44] [Netty NIO Worker #2/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:52812): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:25566
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[22:26:44] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has connected
+[22:27:34] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:52812): kicked from server tmsm201: Kicked by an operator
+[22:27:34] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has disconnected
+[22:27:34] [Netty NIO Worker #2/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:52812): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:25566
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[22:27:34] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has connected
+[22:27:34] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:52812) has disconnected: Please reconnect
+[22:27:34] [Netty NIO Worker #2/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has disconnected
+[22:43:56] [Netty NIO Worker #8/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [initial connection] /[0:0:0:0:0:0:0:1]:53180 has disconnected
+[22:43:59] [Netty NIO Worker #11/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53187) has connected
+[22:43:59] [Netty NIO Worker #11/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53187): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:25566
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[22:43:59] [Netty NIO Worker #11/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has connected
+[22:44:32] [Netty NIO Worker #11/INFO] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53187) has disconnected: Your connection to tmsm201 encountered a problem.
+[22:44:32] [Netty NIO Worker #11/ERROR] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201: read timed out
+[22:44:32] [Netty NIO Worker #11/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has disconnected
+[22:45:06] [Netty NIO Worker #17/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53289) has connected
+[22:45:06] [Netty NIO Worker #17/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53289): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:25566
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[22:45:06] [Netty NIO Worker #17/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has connected
+[22:45:36] [Netty NIO Worker #17/ERROR] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53289): read timed out
+[22:45:36] [Netty NIO Worker #17/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53289) has disconnected
+[22:45:36] [Netty NIO Worker #17/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has disconnected
+[22:46:21] [Netty NIO Worker #5/ERROR] [com.velocitypowered.proxy.connection.MinecraftConnection]: [initial connection] /[0:0:0:0:0:0:0:1]:53347: read timed out
+[22:47:51] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.client.AuthSessionHandler]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53359) has connected
+[22:47:51] [Netty NIO Worker #9/ERROR] [com.velocitypowered.proxy.connection.client.ConnectedPlayer]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53359): unable to connect to server lobby
+io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /127.0.0.1:25566
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.Net.pollConnect(Native Method) ~[?:?]
+	at sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[?:?]
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946) ~[?:?]
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[velocity.jar:3.2.0-SNAPSHOT (git-8dcc7ee3-b294)]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+[22:47:51] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has connected
+[22:52:31] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [connected player] DepressiveCookie (/[0:0:0:0:0:0:0:1]:53359) has disconnected
+[22:52:31] [Netty NIO Worker #9/INFO] [com.velocitypowered.proxy.connection.MinecraftConnection]: [server connection] DepressiveCookie -> tmsm201 has disconnected
+[22:58:02] [Thread-0/INFO] [com.velocitypowered.proxy.VelocityServer]: Shutting down the proxy...
+[22:58:02] [Thread-0/INFO] [com.velocitypowered.proxy.network.ConnectionManager]: Closing endpoint /0.0.0.0:25565
